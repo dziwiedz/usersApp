@@ -35,6 +35,8 @@
 		22D34257211867B800F44B6D /* GetDailymotionUsersCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D34256211867B800F44B6D /* GetDailymotionUsersCaseProvider.swift */; };
 		22D34259211867C100F44B6D /* GetUsersCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D34258211867C100F44B6D /* GetUsersCaseProvider.swift */; };
 		22D3425B211867CC00F44B6D /* UseCasesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3425A211867CC00F44B6D /* UseCasesProvider.swift */; };
+		22D3425E2118691900F44B6D /* GithubUser+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3425D2118691900F44B6D /* GithubUser+Codable.swift */; };
+		22D3426021186AEC00F44B6D /* DailymotionUser+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3425F21186AEC00F44B6D /* DailymotionUser+Codable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +148,8 @@
 		22D34256211867B800F44B6D /* GetDailymotionUsersCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDailymotionUsersCaseProvider.swift; sourceTree = "<group>"; };
 		22D34258211867C100F44B6D /* GetUsersCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersCaseProvider.swift; sourceTree = "<group>"; };
 		22D3425A211867CC00F44B6D /* UseCasesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesProvider.swift; sourceTree = "<group>"; };
+		22D3425D2118691900F44B6D /* GithubUser+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubUser+Codable.swift"; sourceTree = "<group>"; };
+		22D3425F21186AEC00F44B6D /* DailymotionUser+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailymotionUser+Codable.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +274,7 @@
 		22D3421C211861F300F44B6D /* Platform */ = {
 			isa = PBXGroup;
 			children = (
+				22D3425C2118690800F44B6D /* Entries */,
 				22D3421D211861F300F44B6D /* Platform.h */,
 				22D3421E211861F300F44B6D /* Info.plist */,
 			);
@@ -332,6 +337,15 @@
 				22D3425A211867CC00F44B6D /* UseCasesProvider.swift */,
 			);
 			path = Providers;
+			sourceTree = "<group>";
+		};
+		22D3425C2118690800F44B6D /* Entries */ = {
+			isa = PBXGroup;
+			children = (
+				22D3425D2118691900F44B6D /* GithubUser+Codable.swift */,
+				22D3425F21186AEC00F44B6D /* DailymotionUser+Codable.swift */,
+			);
+			path = Entries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,6 +510,7 @@
 					};
 					22D3421A211861F300F44B6D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					22D34222211861F300F44B6D = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -623,6 +638,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D3425E2118691900F44B6D /* GithubUser+Codable.swift in Sources */,
+				22D3426021186AEC00F44B6D /* DailymotionUser+Codable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -997,6 +1014,7 @@
 		22D34233211861F300F44B6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1015,6 +1033,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.LukaszNiedzwiedz.Platform;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1025,6 +1044,7 @@
 		22D34234211861F300F44B6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
