@@ -23,6 +23,10 @@
 		22D3422D211861F300F44B6D /* Platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 22D3421D211861F300F44B6D /* Platform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		22D34230211861F300F44B6D /* Platform.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D3421B211861F300F44B6D /* Platform.framework */; };
 		22D34231211861F300F44B6D /* Platform.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 22D3421B211861F300F44B6D /* Platform.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		22D3423F211863A900F44B6D /* UserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3423E211863A900F44B6D /* UserProtocol.swift */; };
+		22D34241211863B300F44B6D /* GithubUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D34240211863B300F44B6D /* GithubUser.swift */; };
+		22D34243211863BB00F44B6D /* DailymotionUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D34242211863BB00F44B6D /* DailymotionUser.swift */; };
+		22D34245211863D500F44B6D /* UserSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D34244211863D500F44B6D /* UserSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +126,10 @@
 		22D34223211861F300F44B6D /* PlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D3422A211861F300F44B6D /* PlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformTests.swift; sourceTree = "<group>"; };
 		22D3422C211861F300F44B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D3423E211863A900F44B6D /* UserProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProtocol.swift; sourceTree = "<group>"; };
+		22D34240211863B300F44B6D /* GithubUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUser.swift; sourceTree = "<group>"; };
+		22D34242211863BB00F44B6D /* DailymotionUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionUser.swift; sourceTree = "<group>"; };
+		22D34244211863D500F44B6D /* UserSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +233,7 @@
 		22D341F9211861EA00F44B6D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				22D3423A2118630B00F44B6D /* Model */,
 				22D341FA211861EA00F44B6D /* Domain.h */,
 				22D341FB211861EA00F44B6D /* Info.plist */,
 			);
@@ -256,6 +265,25 @@
 				22D3422C211861F300F44B6D /* Info.plist */,
 			);
 			path = PlatformTests;
+			sourceTree = "<group>";
+		};
+		22D3423A2118630B00F44B6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				22D3423D2118639F00F44B6D /* Users */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		22D3423D2118639F00F44B6D /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				22D3423E211863A900F44B6D /* UserProtocol.swift */,
+				22D34240211863B300F44B6D /* GithubUser.swift */,
+				22D34242211863BB00F44B6D /* DailymotionUser.swift */,
+				22D34244211863D500F44B6D /* UserSource.swift */,
+			);
+			path = Users;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,6 +440,7 @@
 					};
 					22D341F7211861EA00F44B6D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					22D341FF211861EA00F44B6D = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -519,6 +548,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D34243211863BB00F44B6D /* DailymotionUser.swift in Sources */,
+				22D3423F211863A900F44B6D /* UserProtocol.swift in Sources */,
+				22D34241211863B300F44B6D /* GithubUser.swift in Sources */,
+				22D34245211863D500F44B6D /* UserSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -727,6 +760,7 @@
 		22D341EE211861B100F44B6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z3292JC5M;
@@ -746,6 +780,7 @@
 		22D341EF211861B100F44B6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4Z3292JC5M;
@@ -807,6 +842,7 @@
 		22D34210211861EA00F44B6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -825,6 +861,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.LukaszNiedzwiedz.Domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -835,6 +872,7 @@
 		22D34211211861EA00F44B6D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
