@@ -49,8 +49,9 @@ final class MainViewController: UIViewController, ErrorPresenter {
     
     private func configureTableView() {
         view.addSubview(tableView)
-        tableView.frame = view.bounds
         tableView.separatorStyle = .singleLineEtched
+        tableView.frame = view.bounds
+        tableView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         tableView.register(UserCell.self, forCellReuseIdentifier: UserCell.reuseIdentifier)
         tableView.delegate = self
         tableView.dataSource = viewModel
