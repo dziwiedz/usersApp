@@ -28,6 +28,13 @@
 		22D34243211863BB00F44B6D /* DailymotionUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D34242211863BB00F44B6D /* DailymotionUser.swift */; };
 		22D34245211863D500F44B6D /* UserSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D34244211863D500F44B6D /* UserSource.swift */; };
 		22D3424B2118663700F44B6D /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3424A2118663700F44B6D /* ApiRouter.swift */; };
+		22D3424E211866CA00F44B6D /* GetGithubUsersCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3424D211866CA00F44B6D /* GetGithubUsersCase.swift */; };
+		22D34250211866D500F44B6D /* GetDailymotionUsersCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3424F211866D500F44B6D /* GetDailymotionUsersCase.swift */; };
+		22D34252211866DF00F44B6D /* GetUsersCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D34251211866DF00F44B6D /* GetUsersCase.swift */; };
+		22D34255211867A900F44B6D /* GetGithubUsersCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D34254211867A900F44B6D /* GetGithubUsersCaseProvider.swift */; };
+		22D34257211867B800F44B6D /* GetDailymotionUsersCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D34256211867B800F44B6D /* GetDailymotionUsersCaseProvider.swift */; };
+		22D34259211867C100F44B6D /* GetUsersCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D34258211867C100F44B6D /* GetUsersCaseProvider.swift */; };
+		22D3425B211867CC00F44B6D /* UseCasesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3425A211867CC00F44B6D /* UseCasesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +139,13 @@
 		22D34242211863BB00F44B6D /* DailymotionUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionUser.swift; sourceTree = "<group>"; };
 		22D34244211863D500F44B6D /* UserSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSource.swift; sourceTree = "<group>"; };
 		22D3424A2118663700F44B6D /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		22D3424D211866CA00F44B6D /* GetGithubUsersCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGithubUsersCase.swift; sourceTree = "<group>"; };
+		22D3424F211866D500F44B6D /* GetDailymotionUsersCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDailymotionUsersCase.swift; sourceTree = "<group>"; };
+		22D34251211866DF00F44B6D /* GetUsersCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersCase.swift; sourceTree = "<group>"; };
+		22D34254211867A900F44B6D /* GetGithubUsersCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGithubUsersCaseProvider.swift; sourceTree = "<group>"; };
+		22D34256211867B800F44B6D /* GetDailymotionUsersCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDailymotionUsersCaseProvider.swift; sourceTree = "<group>"; };
+		22D34258211867C100F44B6D /* GetUsersCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersCaseProvider.swift; sourceTree = "<group>"; };
+		22D3425A211867CC00F44B6D /* UseCasesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +249,7 @@
 		22D341F9211861EA00F44B6D /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				22D3424C211866AE00F44B6D /* UseCases */,
 				22D342482118662100F44B6D /* Network */,
 				22D3423A2118630B00F44B6D /* Model */,
 				22D341FA211861EA00F44B6D /* Domain.h */,
@@ -295,6 +310,28 @@
 				22D3424A2118663700F44B6D /* ApiRouter.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		22D3424C211866AE00F44B6D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				22D342532118679800F44B6D /* Providers */,
+				22D3424D211866CA00F44B6D /* GetGithubUsersCase.swift */,
+				22D3424F211866D500F44B6D /* GetDailymotionUsersCase.swift */,
+				22D34251211866DF00F44B6D /* GetUsersCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		22D342532118679800F44B6D /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				22D34254211867A900F44B6D /* GetGithubUsersCaseProvider.swift */,
+				22D34256211867B800F44B6D /* GetDailymotionUsersCaseProvider.swift */,
+				22D34258211867C100F44B6D /* GetUsersCaseProvider.swift */,
+				22D3425A211867CC00F44B6D /* UseCasesProvider.swift */,
+			);
+			path = Providers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -561,8 +598,15 @@
 			files = (
 				22D34243211863BB00F44B6D /* DailymotionUser.swift in Sources */,
 				22D3423F211863A900F44B6D /* UserProtocol.swift in Sources */,
+				22D34255211867A900F44B6D /* GetGithubUsersCaseProvider.swift in Sources */,
+				22D34259211867C100F44B6D /* GetUsersCaseProvider.swift in Sources */,
+				22D3424E211866CA00F44B6D /* GetGithubUsersCase.swift in Sources */,
+				22D34252211866DF00F44B6D /* GetUsersCase.swift in Sources */,
+				22D34250211866D500F44B6D /* GetDailymotionUsersCase.swift in Sources */,
 				22D3424B2118663700F44B6D /* ApiRouter.swift in Sources */,
+				22D3425B211867CC00F44B6D /* UseCasesProvider.swift in Sources */,
 				22D34241211863B300F44B6D /* GithubUser.swift in Sources */,
+				22D34257211867B800F44B6D /* GetDailymotionUsersCaseProvider.swift in Sources */,
 				22D34245211863D500F44B6D /* UserSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
