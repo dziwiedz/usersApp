@@ -25,6 +25,6 @@ extension GithubUser: Codable {
     
     private enum CodingKeys: String, CodingKey {
         case username = "login"
-        case avatarUrl = "avatar_ur"
+        case avatarUrl = "avatar_url"
     }
 }
