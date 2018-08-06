@@ -46,7 +46,7 @@ final class MainViewModel: NSObject, MainViewModeling {
                 return
             }
             else {
-                self?.users = users ?? []
+                self?.users = (users ?? []).sorted { $0.username.lowercased() < $1.username.lowercased() }
                 self?.successHandler?()
             }
         }
