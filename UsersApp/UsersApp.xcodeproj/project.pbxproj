@@ -49,6 +49,8 @@
 		22D3427021186C7000F44B6D /* DailyMotionUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D3426921186C0B00F44B6D /* DailyMotionUser.json */; };
 		22D3427421187B5E00F44B6D /* RequestableResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3427321187B5E00F44B6D /* RequestableResource.swift */; };
 		22D3427721187DFA00F44B6D /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3427621187DFA00F44B6D /* WebService.swift */; };
+		22D3427A2118819000F44B6D /* DailymotionUserResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342792118818F00F44B6D /* DailymotionUserResource.swift */; };
+		22D3427C211881A300F44B6D /* GithubUserResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3427B211881A300F44B6D /* GithubUserResource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -168,6 +170,8 @@
 		22D3426921186C0B00F44B6D /* DailyMotionUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DailyMotionUser.json; sourceTree = "<group>"; };
 		22D3427321187B5E00F44B6D /* RequestableResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestableResource.swift; sourceTree = "<group>"; };
 		22D3427621187DFA00F44B6D /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		22D342792118818F00F44B6D /* DailymotionUserResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionUserResource.swift; sourceTree = "<group>"; };
+		22D3427B211881A300F44B6D /* GithubUserResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserResource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,6 +394,7 @@
 		22D3427121187B1A00F44B6D /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				22D342782118816500F44B6D /* Resources */,
 				22D3427521187DEE00F44B6D /* WebService */,
 				22D3427221187B2000F44B6D /* Components */,
 			);
@@ -410,6 +415,15 @@
 				22D3427621187DFA00F44B6D /* WebService.swift */,
 			);
 			path = WebService;
+			sourceTree = "<group>";
+		};
+		22D342782118816500F44B6D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22D342792118818F00F44B6D /* DailymotionUserResource.swift */,
+				22D3427B211881A300F44B6D /* GithubUserResource.swift */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -714,6 +728,8 @@
 				22D3425E2118691900F44B6D /* GithubUser+Codable.swift in Sources */,
 				22D3427721187DFA00F44B6D /* WebService.swift in Sources */,
 				22D3426021186AEC00F44B6D /* DailymotionUser+Codable.swift in Sources */,
+				22D3427C211881A300F44B6D /* GithubUserResource.swift in Sources */,
+				22D3427A2118819000F44B6D /* DailymotionUserResource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol RequestableResource {
+internal protocol RequestableResource {
     var path: String { get }
     var httpMethod: String { get }
     var body: Data? { get }
@@ -18,16 +18,30 @@ protocol RequestableResource {
 }
 
 extension RequestableResource {
-    var request: URLRequest? {
+    var request: URLRequest {
         let queryItems = paramaterers?.map{ URLQueryItem(name: $0.key, value: $0.value) }
         var urlComponenet = URLComponents(string: path)
         urlComponenet?.queryItems = queryItems
         guard let url = urlComponenet?.url
-            else { return nil }
+            else {
+                fatalError("Wrong url")
+        }
         var request = URLRequest(url: url)
         headers?.forEach{ request.addValue( $0.value, forHTTPHeaderField: $0.key) }
         request.httpBody = body
         request.httpMethod = httpMethod
         return request
+    }
+}
+
+internal protocol GetRequestResource: RequestableResource {
+}
+
+extension GetRequestResource {
+    var httpMethod: String {
+        return "GET"
+    }
+    var body: Data? {
+        return nil
     }
 }

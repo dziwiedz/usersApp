@@ -9,6 +9,6 @@
 import Foundation
 
 public final class ApiRouter {
-    static let githubBaseUrl: String = "https://api.github.com"
-    static let dailymotionBaseUrl: String = "https://api.dailymotion.com"
+    public static let githubBaseUrl: String = "https://api.github.com"
+    public static let dailymotionBaseUrl: String = "https://api.dailymotion.com"
 }
