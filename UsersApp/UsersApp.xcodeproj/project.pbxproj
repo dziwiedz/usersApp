@@ -37,6 +37,16 @@
 		22D3425B211867CC00F44B6D /* UseCasesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3425A211867CC00F44B6D /* UseCasesProvider.swift */; };
 		22D3425E2118691900F44B6D /* GithubUser+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3425D2118691900F44B6D /* GithubUser+Codable.swift */; };
 		22D3426021186AEC00F44B6D /* DailymotionUser+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3425F21186AEC00F44B6D /* DailymotionUser+Codable.swift */; };
+		22D3426221186B8F00F44B6D /* MappingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3426121186B8F00F44B6D /* MappingTests.swift */; };
+		22D3426521186BCE00F44B6D /* JsonReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3426421186BCE00F44B6D /* JsonReader.swift */; };
+		22D3426821186BFF00F44B6D /* GithubUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D3426721186BFF00F44B6D /* GithubUser.json */; };
+		22D3426A21186C0B00F44B6D /* DailyMotionUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D3426921186C0B00F44B6D /* DailyMotionUser.json */; };
+		22D3426B21186C6500F44B6D /* DailyMotionUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D3426921186C0B00F44B6D /* DailyMotionUser.json */; };
+		22D3426C21186C6800F44B6D /* GithubUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D3426721186BFF00F44B6D /* GithubUser.json */; };
+		22D3426D21186C6900F44B6D /* GithubUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D3426721186BFF00F44B6D /* GithubUser.json */; };
+		22D3426E21186C6C00F44B6D /* GithubUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D3426721186BFF00F44B6D /* GithubUser.json */; };
+		22D3426F21186C6F00F44B6D /* DailyMotionUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D3426921186C0B00F44B6D /* DailyMotionUser.json */; };
+		22D3427021186C7000F44B6D /* DailyMotionUser.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D3426921186C0B00F44B6D /* DailyMotionUser.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -150,6 +160,10 @@
 		22D3425A211867CC00F44B6D /* UseCasesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesProvider.swift; sourceTree = "<group>"; };
 		22D3425D2118691900F44B6D /* GithubUser+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GithubUser+Codable.swift"; sourceTree = "<group>"; };
 		22D3425F21186AEC00F44B6D /* DailymotionUser+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DailymotionUser+Codable.swift"; sourceTree = "<group>"; };
+		22D3426121186B8F00F44B6D /* MappingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappingTests.swift; sourceTree = "<group>"; };
+		22D3426421186BCE00F44B6D /* JsonReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonReader.swift; sourceTree = "<group>"; };
+		22D3426721186BFF00F44B6D /* GithubUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GithubUser.json; sourceTree = "<group>"; };
+		22D3426921186C0B00F44B6D /* DailyMotionUser.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DailyMotionUser.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,8 +298,10 @@
 		22D34229211861F300F44B6D /* PlatformTests */ = {
 			isa = PBXGroup;
 			children = (
+				22D3426321186BAB00F44B6D /* Utils */,
 				22D3422A211861F300F44B6D /* PlatformTests.swift */,
 				22D3422C211861F300F44B6D /* Info.plist */,
+				22D3426121186B8F00F44B6D /* MappingTests.swift */,
 			);
 			path = PlatformTests;
 			sourceTree = "<group>";
@@ -346,6 +362,24 @@
 				22D3425F21186AEC00F44B6D /* DailymotionUser+Codable.swift */,
 			);
 			path = Entries;
+			sourceTree = "<group>";
+		};
+		22D3426321186BAB00F44B6D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				22D3426621186BD700F44B6D /* Samples */,
+				22D3426421186BCE00F44B6D /* JsonReader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		22D3426621186BD700F44B6D /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				22D3426721186BFF00F44B6D /* GithubUser.json */,
+				22D3426921186C0B00F44B6D /* DailyMotionUser.json */,
+			);
+			path = Samples;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -546,6 +580,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D3426B21186C6500F44B6D /* DailyMotionUser.json in Resources */,
+				22D3426C21186C6800F44B6D /* GithubUser.json in Resources */,
 				22D341DE211861B100F44B6D /* LaunchScreen.storyboard in Resources */,
 				22D341DB211861B100F44B6D /* Assets.xcassets in Resources */,
 				22D341D9211861AF00F44B6D /* Main.storyboard in Resources */,
@@ -556,6 +592,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D3427021186C7000F44B6D /* DailyMotionUser.json in Resources */,
+				22D3426E21186C6C00F44B6D /* GithubUser.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -570,6 +608,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D3426F21186C6F00F44B6D /* DailyMotionUser.json in Resources */,
+				22D3426D21186C6900F44B6D /* GithubUser.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -584,6 +624,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D3426A21186C0B00F44B6D /* DailyMotionUser.json in Resources */,
+				22D3426821186BFF00F44B6D /* GithubUser.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +689,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D3426221186B8F00F44B6D /* MappingTests.swift in Sources */,
+				22D3426521186BCE00F44B6D /* JsonReader.swift in Sources */,
 				22D3422B211861F300F44B6D /* PlatformTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
