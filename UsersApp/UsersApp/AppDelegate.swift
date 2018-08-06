@@ -21,8 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let controller = MainViewController()
         let navigationController = UINavigationController(rootViewController: controller)
         let useCaseProvider = Platform.UseCaseProvider()
-        let navigator = MainNavigator(navigationController: navigationController, useCaseProvider: useCaseProvider)
-        let viewModel = MainViewModel(usersProvider: useCaseProvider.provideUserCaseProvider().provideUseCase(), navigator: navigator)
+        let imageDownloader = ImageDownlaoder()
+        let navigator = MainNavigator(navigationController: navigationController,
+                                      useCaseProvider: useCaseProvider,
+                                      imageDownloader: imageDownloader)
+        let viewModel = MainViewModel(usersProvider: useCaseProvider.provideUserCaseProvider().provideUseCase(),
+                                      navigator: navigator,
+                                      imageDownlaoder: imageDownloader)
         controller.viewModel = viewModel
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()

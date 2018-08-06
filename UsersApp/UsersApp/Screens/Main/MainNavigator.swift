@@ -17,15 +17,21 @@ final class MainNavigator : MainNavigating {
     
     private let navigationController: UINavigationController
     private let useCaseProvider: UseCasesProvider
+    private let imageDownlaoder: ImageDownloading
     
     func toDetails(of user: UserProtocol) {
-        
+        let controller = DetailViewController()
+        controller.user = user
+        controller.imageDownloader = imageDownlaoder
+        navigationController.pushViewController(controller, animated: true)
     }
     
     init(navigationController: UINavigationController,
-         useCaseProvider: UseCasesProvider) {
+         useCaseProvider: UseCasesProvider,
+         imageDownloader: ImageDownloading) {
         self.navigationController = navigationController
         self.useCaseProvider = useCaseProvider
+        self.imageDownlaoder = imageDownloader
     }
     
 }

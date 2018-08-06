@@ -23,7 +23,7 @@ final class MainViewModel: NSObject, MainViewModeling {
     
     private let usersProvider: GetUsersCase
     private let navigator: MainNavigating
-    private let imageDownlaoder: ImageDownlaoder = ImageDownlaoder()
+    private let imageDownlaoder: ImageDownloading
     private var users: [UserProtocol] = []
     
     //    MARK: - Public properties
@@ -55,9 +55,11 @@ final class MainViewModel: NSObject, MainViewModeling {
     //    MARK: - Initializers
     
     init(usersProvider: GetUsersCase,
-         navigator: MainNavigating) {
+         navigator: MainNavigating,
+         imageDownlaoder: ImageDownloading) {
         self.usersProvider = usersProvider
         self.navigator = navigator
+        self.imageDownlaoder = imageDownlaoder
     }
 }
 

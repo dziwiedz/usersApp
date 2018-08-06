@@ -79,6 +79,7 @@
 		22D342BB2118A89300F44B6D /* ErrorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342BA2118A89300F44B6D /* ErrorPresenter.swift */; };
 		22D342BE2118AAEF00F44B6D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342BD2118AAEF00F44B6D /* UserCell.swift */; };
 		22D342C32118B12500F44B6D /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342C22118B12500F44B6D /* ImageDownloader.swift */; };
+		22D342C52118B91800F44B6D /* DetailViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342C42118B91800F44B6D /* DetailViewcontroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -231,6 +232,7 @@
 		22D342BA2118A89300F44B6D /* ErrorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPresenter.swift; sourceTree = "<group>"; };
 		22D342BD2118AAEF00F44B6D /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		22D342C22118B12500F44B6D /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		22D342C42118B91800F44B6D /* DetailViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewcontroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -609,6 +611,7 @@
 		22D342B12118A71F00F44B6D /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				22D342C42118B91800F44B6D /* DetailViewcontroller.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -894,6 +897,7 @@
 				22D342B92118A87700F44B6D /* Reusable.swift in Sources */,
 				22D342B32118A72800F44B6D /* MainViewController.swift in Sources */,
 				22D341D6211861AF00F44B6D /* ViewController.swift in Sources */,
+				22D342C52118B91800F44B6D /* DetailViewcontroller.swift in Sources */,
 				22D342B72118A73700F44B6D /* MainNavigator.swift in Sources */,
 				22D341D4211861AF00F44B6D /* AppDelegate.swift in Sources */,
 				22D342C32118B12500F44B6D /* ImageDownloader.swift in Sources */,
