@@ -8,7 +8,11 @@
 
 import UIKit
 
-final class ImageDownlaoder {
+protocol ImageDownloading {
+    func downloadImage(url: URL?, completion: @escaping (_ image: UIImage?, _ error: Error? ) -> Void)
+}
+
+final class ImageDownlaoder: ImageDownloading {
 
     private let imageCache: NSCache = NSCache<NSString, UIImage>()
     private let session: URLSession
