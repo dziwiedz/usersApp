@@ -23,6 +23,7 @@ final class MainViewModel: NSObject, MainViewModeling {
     
     private let usersProvider: GetUsersCase
     private let navigator: MainNavigating
+    private let imageDownlaoder: ImageDownlaoder = ImageDownlaoder()
     private var users: [UserProtocol] = []
     
     //    MARK: - Public properties
@@ -67,7 +68,13 @@ extension MainViewModel: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: UserCell.reuseIdentifier) as! UserCell
-        cell.configureWith(user: users[indexPath.row])
+        let user = users[indexPath.row]
+        cell.configureWith(user: user)
+        self.imageDownlaoder.downloadImage(url: URL(string: user.avatarUrl)) { (image, error) in
+            DispatchQueue.main.async {
+               cell.avatarIamge.image = image
+            }
+        }
         return cell
     }
     
