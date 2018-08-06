@@ -80,6 +80,11 @@
 		22D342BE2118AAEF00F44B6D /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342BD2118AAEF00F44B6D /* UserCell.swift */; };
 		22D342C32118B12500F44B6D /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342C22118B12500F44B6D /* ImageDownloader.swift */; };
 		22D342C52118B91800F44B6D /* DetailViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342C42118B91800F44B6D /* DetailViewcontroller.swift */; };
+		22D342C92118BED700F44B6D /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342C82118BED700F44B6D /* MainViewModelTests.swift */; };
+		22D342CC2118BF1C00F44B6D /* MainNavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342CB2118BF1C00F44B6D /* MainNavigatorMock.swift */; };
+		22D342CE2118BF2B00F44B6D /* GetUsersUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342CD2118BF2B00F44B6D /* GetUsersUseCaseMock.swift */; };
+		22D342D02118BF3400F44B6D /* ImageDownloadingMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342CF2118BF3400F44B6D /* ImageDownloadingMock.swift */; };
+		22D342D12118C12100F44B6D /* UsersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342A2211895D100F44B6D /* UsersProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -233,6 +238,10 @@
 		22D342BD2118AAEF00F44B6D /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		22D342C22118B12500F44B6D /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		22D342C42118B91800F44B6D /* DetailViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewcontroller.swift; sourceTree = "<group>"; };
+		22D342C82118BED700F44B6D /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
+		22D342CB2118BF1C00F44B6D /* MainNavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigatorMock.swift; sourceTree = "<group>"; };
+		22D342CD2118BF2B00F44B6D /* GetUsersUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersUseCaseMock.swift; sourceTree = "<group>"; };
+		22D342CF2118BF3400F44B6D /* ImageDownloadingMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloadingMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -329,6 +338,8 @@
 		22D341E7211861B100F44B6D /* UsersAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				22D342C72118BECD00F44B6D /* Tests */,
+				22D342C62118BEBE00F44B6D /* Utils */,
 				22D341E8211861B100F44B6D /* UsersAppTests.swift */,
 				22D341EA211861B100F44B6D /* Info.plist */,
 			);
@@ -632,6 +643,32 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		22D342C62118BEBE00F44B6D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				22D342CA2118BF0D00F44B6D /* Mocks */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		22D342C72118BECD00F44B6D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				22D342C82118BED700F44B6D /* MainViewModelTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		22D342CA2118BF0D00F44B6D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				22D342CB2118BF1C00F44B6D /* MainNavigatorMock.swift */,
+				22D342CD2118BF2B00F44B6D /* GetUsersUseCaseMock.swift */,
+				22D342CF2118BF3400F44B6D /* ImageDownloadingMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -909,7 +946,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D342D02118BF3400F44B6D /* ImageDownloadingMock.swift in Sources */,
+				22D342CC2118BF1C00F44B6D /* MainNavigatorMock.swift in Sources */,
+				22D342CE2118BF2B00F44B6D /* GetUsersUseCaseMock.swift in Sources */,
 				22D341E9211861B100F44B6D /* UsersAppTests.swift in Sources */,
+				22D342C92118BED700F44B6D /* MainViewModelTests.swift in Sources */,
+				22D342D12118C12100F44B6D /* UsersProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

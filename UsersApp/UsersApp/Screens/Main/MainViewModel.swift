@@ -34,6 +34,7 @@ final class MainViewModel: NSObject, MainViewModeling {
     //    MARK: - Public methods
     
     func didTapOnItem(at indexPath: IndexPath) {
+        guard indexPath.row < users.count else { return }
         let item = users[indexPath.row]
         navigator.toDetails(of: item)
     }
