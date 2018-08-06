@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct GithubUser: UserProtocol {
-    let username: String
-    let avatarUrl: String
-    let from: UserSource = .github
+public struct GithubUser: UserProtocol {
+    public let username: String
+    public let avatarUrl: String
+    public let from: UserSource = .github
     
     
 }
