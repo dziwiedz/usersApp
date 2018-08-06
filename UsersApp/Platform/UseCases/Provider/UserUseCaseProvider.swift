@@ -8,8 +8,8 @@
 
 import Foundation
 import Domain
-final class UserUseCaseProvider: Domain.GetUsersCaseProvider {
-    
+
+final class UserUseCaseProvider: Domain.GetUsersCaseProvider {    
     
     private let useCase: Domain.GetUsersCase
     

@@ -17,7 +17,11 @@ final class GetGithubUsersCaseProvider: Domain.GetGithubUsersCaseProvider {
         return useCase
     }
     
-    init(resource: RequestableResource, webService: WebServicing) {
+    init() {
+        let resource = GithubUserResource()
+        let configuration = URLSessionConfiguration.default
+        let urlSession = URLSession(configuration: configuration)
+        let webService = WebService(session: urlSession)
         self.useCase = GetGithubUsersCase(resource: resource, webService: webService)
     }
     

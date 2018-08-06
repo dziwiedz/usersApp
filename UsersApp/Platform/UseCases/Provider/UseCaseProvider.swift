@@ -28,12 +28,11 @@ public final class UseCaseProvider: Domain.UseCasesProvider {
         return usersProvider
     }
     
-    public init(githubProvider: Domain.GetGithubUsersCaseProvider,
-                dailymotionProvider: GetDailyMotionUsersCaseProvider,
-                 usersProvider : GetUsersCaseProvider) {
-        self.githubProvider = githubProvider
-        self.dailymotionProvider = dailymotionProvider
-        self.usersProvider = usersProvider
+    public init() {
+        self.githubProvider = GetGithubUsersCaseProvider()
+        self.dailymotionProvider = GetDailymotionUsersCaseProvider()
+        self.usersProvider = UserUseCaseProvider(githubUsersUseCase: githubProvider.provideUseCase(),
+                                                 dailyMotionUseCase: dailymotionProvider.provideUseCase())
     }
     
 }

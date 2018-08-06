@@ -69,8 +69,8 @@
 		22D3429E211893A700F44B6D /* DailyMotionUserResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D342992118934B00F44B6D /* DailyMotionUserResponse.json */; };
 		22D342A12118943100F44B6D /* DailymotionUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342A02118943100F44B6D /* DailymotionUserResponse.swift */; };
 		22D342A3211895D100F44B6D /* UsersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342A2211895D100F44B6D /* UsersProvider.swift */; };
-		22D342A52118A0E800F44B6D /* GithubUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342A42118A0E800F44B6D /* GithubUseCaseProvider.swift */; };
-		22D342A72118A0F400F44B6D /* DailymotionUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342A62118A0F400F44B6D /* DailymotionUseCaseProvider.swift */; };
+		22D342A52118A0E800F44B6D /* GetGithubUsersCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342A42118A0E800F44B6D /* GetGithubUsersCaseProvider.swift */; };
+		22D342A72118A0F400F44B6D /* GetDailymotionUsersCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342A62118A0F400F44B6D /* GetDailymotionUsersCaseProvider.swift */; };
 		22D342A92118A0FE00F44B6D /* UserUseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342A82118A0FE00F44B6D /* UserUseCaseProvider.swift */; };
 		22D342AB2118A11300F44B6D /* UseCaseProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342AA2118A11300F44B6D /* UseCaseProvider.swift */; };
 /* End PBXBuildFile section */
@@ -208,8 +208,8 @@
 		22D342992118934B00F44B6D /* DailyMotionUserResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DailyMotionUserResponse.json; sourceTree = "<group>"; };
 		22D342A02118943100F44B6D /* DailymotionUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionUserResponse.swift; sourceTree = "<group>"; };
 		22D342A2211895D100F44B6D /* UsersProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProvider.swift; sourceTree = "<group>"; };
-		22D342A42118A0E800F44B6D /* GithubUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUseCaseProvider.swift; sourceTree = "<group>"; };
-		22D342A62118A0F400F44B6D /* DailymotionUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionUseCaseProvider.swift; sourceTree = "<group>"; };
+		22D342A42118A0E800F44B6D /* GetGithubUsersCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGithubUsersCaseProvider.swift; sourceTree = "<group>"; };
+		22D342A62118A0F400F44B6D /* GetDailymotionUsersCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDailymotionUsersCaseProvider.swift; sourceTree = "<group>"; };
 		22D342A82118A0FE00F44B6D /* UserUseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserUseCaseProvider.swift; sourceTree = "<group>"; };
 		22D342AA2118A11300F44B6D /* UseCaseProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -483,8 +483,8 @@
 		22D3427E2118844000F44B6D /* Provider */ = {
 			isa = PBXGroup;
 			children = (
-				22D342A42118A0E800F44B6D /* GithubUseCaseProvider.swift */,
-				22D342A62118A0F400F44B6D /* DailymotionUseCaseProvider.swift */,
+				22D342A42118A0E800F44B6D /* GetGithubUsersCaseProvider.swift */,
+				22D342A62118A0F400F44B6D /* GetDailymotionUsersCaseProvider.swift */,
 				22D342A82118A0FE00F44B6D /* UserUseCaseProvider.swift */,
 				22D342AA2118A11300F44B6D /* UseCaseProvider.swift */,
 			);
@@ -845,7 +845,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22D342A92118A0FE00F44B6D /* UserUseCaseProvider.swift in Sources */,
-				22D342A72118A0F400F44B6D /* DailymotionUseCaseProvider.swift in Sources */,
+				22D342A72118A0F400F44B6D /* GetDailymotionUsersCaseProvider.swift in Sources */,
 				22D3427421187B5E00F44B6D /* RequestableResource.swift in Sources */,
 				22D342A12118943100F44B6D /* DailymotionUserResponse.swift in Sources */,
 				22D3425E2118691900F44B6D /* GithubUser+Codable.swift in Sources */,
@@ -857,7 +857,7 @@
 				22D342852118892900F44B6D /* GetUsersCase.swift in Sources */,
 				22D3427A2118819000F44B6D /* DailymotionUserResource.swift in Sources */,
 				22D34283211888AF00F44B6D /* GetDailyMotionUsersCase.swift in Sources */,
-				22D342A52118A0E800F44B6D /* GithubUseCaseProvider.swift in Sources */,
+				22D342A52118A0E800F44B6D /* GetGithubUsersCaseProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

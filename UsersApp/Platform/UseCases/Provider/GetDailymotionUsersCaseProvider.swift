@@ -17,7 +17,11 @@ final class GetDailymotionUsersCaseProvider: Domain.GetDailyMotionUsersCaseProvi
         return useCase
     }
     
-    init(resource: RequestableResource, webService: WebServicing) {
+    init() {
+        let resource = DailymotionUserResource()
+        let configuration = URLSessionConfiguration.default
+        let urlSession = URLSession(configuration: configuration)
+        let webService = WebService(session: urlSession)
         self.useCase = GetDailyMotionUsersCase(resource: resource, webService: webService)
     }
     

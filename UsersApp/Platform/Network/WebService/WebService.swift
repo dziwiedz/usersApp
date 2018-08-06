@@ -12,7 +12,7 @@ internal protocol WebServicing {
     func makeRequest<T: Decodable>(for resource: RequestableResource, completionHandler: @escaping (Error?, T?) -> Void)
 }
 
-internal final class WebService {
+internal final class WebService : WebServicing {
     private let session: URLSession
     
     internal init(session: URLSession) {
