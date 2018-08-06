@@ -1,6 +1,6 @@
 //
-//  UserSource.swift
-//  Domain
+//  ImageDownloader.swift
+//  UsersApp
 //
 //  Created by Łukasz Niedźwiedź on 06/08/2018.
 //  Copyright © 2018 Niedzwiedz. All rights reserved.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-public enum UserSource: String {
-    case github, dailymotion
+final class ImageDownlaoder {
+
 }
