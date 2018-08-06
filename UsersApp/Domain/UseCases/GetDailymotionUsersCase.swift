@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol GetDailyMotionUsersCase {
-    func getUsers() -> [DailyMotionUser]
+    func getUsers(completion: @escaping (Error?,[DailyMotionUser]?) -> Void)
 }

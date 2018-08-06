@@ -9,5 +9,5 @@
 import Foundation
 
 public protocol GetUsersCase {
-    func getUsers() -> [UserProtocol]
+    func getUsers(completion: @escaping (Error?, [UserProtocol]?) -> Void)
 }
