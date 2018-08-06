@@ -13,6 +13,7 @@ internal final class GetUsersCase: Domain.GetUsersCase {
     
     private let githubUsersUseCase: Domain.GetGithubUsersCase
     private let dailyMotionUseCase: Domain.GetDailyMotionUsersCase
+    private let semaphore: DispatchSemaphore = DispatchSemaphore(value: 1)
     private var lastError: Error?
     private var users: [UserProtocol]?
     
@@ -46,7 +47,9 @@ internal final class GetUsersCase: Domain.GetUsersCase {
             dispatchGroup.leave()
             return
         }
+        semaphore.wait()
         self.users?.append(contentsOf: users ?? [])
+        semaphore.signal()
         dispatchGroup.leave()
     }
     

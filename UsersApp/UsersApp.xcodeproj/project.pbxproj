@@ -54,6 +54,21 @@
 		22D342812118845400F44B6D /* GetGithubUserCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342802118845400F44B6D /* GetGithubUserCase.swift */; };
 		22D34283211888AF00F44B6D /* GetDailyMotionUsersCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D34282211888AF00F44B6D /* GetDailyMotionUsersCase.swift */; };
 		22D342852118892900F44B6D /* GetUsersCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342842118892900F44B6D /* GetUsersCase.swift */; };
+		22D3428821188C5A00F44B6D /* UseCasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3428721188C5A00F44B6D /* UseCasesTests.swift */; };
+		22D3428B21188D4F00F44B6D /* WebServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3428A21188D4F00F44B6D /* WebServiceMock.swift */; };
+		22D3428D21188E2800F44B6D /* GetGithubUsersUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3428C21188E2800F44B6D /* GetGithubUsersUseCaseMock.swift */; };
+		22D3428F21188E3600F44B6D /* GetDailymotionUsersUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3428E21188E3600F44B6D /* GetDailymotionUsersUseCaseMock.swift */; };
+		22D3429221188F3600F44B6D /* GithubUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3429121188F3600F44B6D /* GithubUseCaseTests.swift */; };
+		22D3429421188F4100F44B6D /* DailymotionUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3429321188F4100F44B6D /* DailymotionUseCaseTests.swift */; };
+		22D3429621188F4C00F44B6D /* UsersUseCasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3429521188F4C00F44B6D /* UsersUseCasesTests.swift */; };
+		22D342982118933C00F44B6D /* GithubUsersResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D342972118933C00F44B6D /* GithubUsersResponse.json */; };
+		22D3429A2118934B00F44B6D /* DailyMotionUserResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D342992118934B00F44B6D /* DailyMotionUserResponse.json */; };
+		22D3429B2118938F00F44B6D /* GithubUsersResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D342972118933C00F44B6D /* GithubUsersResponse.json */; };
+		22D3429C2118939200F44B6D /* DailyMotionUserResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D342992118934B00F44B6D /* DailyMotionUserResponse.json */; };
+		22D3429D211893A400F44B6D /* GithubUsersResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D342972118933C00F44B6D /* GithubUsersResponse.json */; };
+		22D3429E211893A700F44B6D /* DailyMotionUserResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 22D342992118934B00F44B6D /* DailyMotionUserResponse.json */; };
+		22D342A12118943100F44B6D /* DailymotionUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342A02118943100F44B6D /* DailymotionUserResponse.swift */; };
+		22D342A3211895D100F44B6D /* UsersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342A2211895D100F44B6D /* UsersProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +193,17 @@
 		22D342802118845400F44B6D /* GetGithubUserCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGithubUserCase.swift; sourceTree = "<group>"; };
 		22D34282211888AF00F44B6D /* GetDailyMotionUsersCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDailyMotionUsersCase.swift; sourceTree = "<group>"; };
 		22D342842118892900F44B6D /* GetUsersCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersCase.swift; sourceTree = "<group>"; };
+		22D3428721188C5A00F44B6D /* UseCasesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCasesTests.swift; sourceTree = "<group>"; };
+		22D3428A21188D4F00F44B6D /* WebServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceMock.swift; sourceTree = "<group>"; };
+		22D3428C21188E2800F44B6D /* GetGithubUsersUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGithubUsersUseCaseMock.swift; sourceTree = "<group>"; };
+		22D3428E21188E3600F44B6D /* GetDailymotionUsersUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDailymotionUsersUseCaseMock.swift; sourceTree = "<group>"; };
+		22D3429121188F3600F44B6D /* GithubUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUseCaseTests.swift; sourceTree = "<group>"; };
+		22D3429321188F4100F44B6D /* DailymotionUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionUseCaseTests.swift; sourceTree = "<group>"; };
+		22D3429521188F4C00F44B6D /* UsersUseCasesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersUseCasesTests.swift; sourceTree = "<group>"; };
+		22D342972118933C00F44B6D /* GithubUsersResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GithubUsersResponse.json; sourceTree = "<group>"; };
+		22D342992118934B00F44B6D /* DailyMotionUserResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DailyMotionUserResponse.json; sourceTree = "<group>"; };
+		22D342A02118943100F44B6D /* DailymotionUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionUserResponse.swift; sourceTree = "<group>"; };
+		22D342A2211895D100F44B6D /* UsersProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,10 +340,9 @@
 		22D34229211861F300F44B6D /* PlatformTests */ = {
 			isa = PBXGroup;
 			children = (
+				22D3428621188C4000F44B6D /* Tests */,
 				22D3426321186BAB00F44B6D /* Utils */,
-				22D3422A211861F300F44B6D /* PlatformTests.swift */,
 				22D3422C211861F300F44B6D /* Info.plist */,
-				22D3426121186B8F00F44B6D /* MappingTests.swift */,
 			);
 			path = PlatformTests;
 			sourceTree = "<group>";
@@ -383,8 +408,10 @@
 		22D3426321186BAB00F44B6D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				22D3428921188C7D00F44B6D /* Mocks */,
 				22D3426621186BD700F44B6D /* Samples */,
 				22D3426421186BCE00F44B6D /* JsonReader.swift */,
+				22D342A2211895D100F44B6D /* UsersProvider.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -394,6 +421,8 @@
 			children = (
 				22D3426721186BFF00F44B6D /* GithubUser.json */,
 				22D3426921186C0B00F44B6D /* DailyMotionUser.json */,
+				22D342972118933C00F44B6D /* GithubUsersResponse.json */,
+				22D342992118934B00F44B6D /* DailyMotionUserResponse.json */,
 			);
 			path = Samples;
 			sourceTree = "<group>";
@@ -401,6 +430,7 @@
 		22D3427121187B1A00F44B6D /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				22D3429F2118941C00F44B6D /* Responses */,
 				22D342782118816500F44B6D /* Resources */,
 				22D3427521187DEE00F44B6D /* WebService */,
 				22D3427221187B2000F44B6D /* Components */,
@@ -457,6 +487,45 @@
 				22D342842118892900F44B6D /* GetUsersCase.swift */,
 			);
 			path = Implementation;
+			sourceTree = "<group>";
+		};
+		22D3428621188C4000F44B6D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				22D3429021188F2600F44B6D /* UseCases */,
+				22D3426121186B8F00F44B6D /* MappingTests.swift */,
+				22D3422A211861F300F44B6D /* PlatformTests.swift */,
+				22D3428721188C5A00F44B6D /* UseCasesTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		22D3428921188C7D00F44B6D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				22D3428A21188D4F00F44B6D /* WebServiceMock.swift */,
+				22D3428C21188E2800F44B6D /* GetGithubUsersUseCaseMock.swift */,
+				22D3428E21188E3600F44B6D /* GetDailymotionUsersUseCaseMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		22D3429021188F2600F44B6D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				22D3429121188F3600F44B6D /* GithubUseCaseTests.swift */,
+				22D3429321188F4100F44B6D /* DailymotionUseCaseTests.swift */,
+				22D3429521188F4C00F44B6D /* UsersUseCasesTests.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		22D3429F2118941C00F44B6D /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				22D342A02118943100F44B6D /* DailymotionUserResponse.swift */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -661,6 +730,8 @@
 				22D3426C21186C6800F44B6D /* GithubUser.json in Resources */,
 				22D341DE211861B100F44B6D /* LaunchScreen.storyboard in Resources */,
 				22D341DB211861B100F44B6D /* Assets.xcassets in Resources */,
+				22D3429D211893A400F44B6D /* GithubUsersResponse.json in Resources */,
+				22D3429E211893A700F44B6D /* DailyMotionUserResponse.json in Resources */,
 				22D341D9211861AF00F44B6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -694,6 +765,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D3429B2118938F00F44B6D /* GithubUsersResponse.json in Resources */,
+				22D3429C2118939200F44B6D /* DailyMotionUserResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,7 +775,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				22D3426A21186C0B00F44B6D /* DailyMotionUser.json in Resources */,
+				22D342982118933C00F44B6D /* GithubUsersResponse.json in Resources */,
 				22D3426821186BFF00F44B6D /* GithubUser.json in Resources */,
+				22D3429A2118934B00F44B6D /* DailyMotionUserResponse.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -758,6 +833,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22D3427421187B5E00F44B6D /* RequestableResource.swift in Sources */,
+				22D342A12118943100F44B6D /* DailymotionUserResponse.swift in Sources */,
 				22D3425E2118691900F44B6D /* GithubUser+Codable.swift in Sources */,
 				22D3427721187DFA00F44B6D /* WebService.swift in Sources */,
 				22D342812118845400F44B6D /* GetGithubUserCase.swift in Sources */,
@@ -773,7 +849,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D3428B21188D4F00F44B6D /* WebServiceMock.swift in Sources */,
 				22D3426221186B8F00F44B6D /* MappingTests.swift in Sources */,
+				22D3429621188F4C00F44B6D /* UsersUseCasesTests.swift in Sources */,
+				22D3429221188F3600F44B6D /* GithubUseCaseTests.swift in Sources */,
+				22D3428D21188E2800F44B6D /* GetGithubUsersUseCaseMock.swift in Sources */,
+				22D3428821188C5A00F44B6D /* UseCasesTests.swift in Sources */,
+				22D3429421188F4100F44B6D /* DailymotionUseCaseTests.swift in Sources */,
+				22D3428F21188E3600F44B6D /* GetDailymotionUsersUseCaseMock.swift in Sources */,
+				22D342A3211895D100F44B6D /* UsersProvider.swift in Sources */,
 				22D3426521186BCE00F44B6D /* JsonReader.swift in Sources */,
 				22D3422B211861F300F44B6D /* PlatformTests.swift in Sources */,
 			);

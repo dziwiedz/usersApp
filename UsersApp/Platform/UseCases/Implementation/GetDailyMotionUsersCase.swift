@@ -15,8 +15,8 @@ internal final class GetDailyMotionUsersCase: Domain.GetDailyMotionUsersCase {
     private let webService: WebServicing
     
     func getUsers(completion: @escaping (Error?, [DailyMotionUser]?) -> Void) {
-        self.webService.makeRequest(for: resource) { (error: Error?, users: [DailyMotionUser]?) in
-            completion(error,users)
+        self.webService.makeRequest(for: resource) { (error: Error?, response: DailymotionUserResponse?) in
+            completion(error,response?.users)
         }
     }
     
