@@ -51,6 +51,9 @@
 		22D3427721187DFA00F44B6D /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3427621187DFA00F44B6D /* WebService.swift */; };
 		22D3427A2118819000F44B6D /* DailymotionUserResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342792118818F00F44B6D /* DailymotionUserResource.swift */; };
 		22D3427C211881A300F44B6D /* GithubUserResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D3427B211881A300F44B6D /* GithubUserResource.swift */; };
+		22D342812118845400F44B6D /* GetGithubUserCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342802118845400F44B6D /* GetGithubUserCase.swift */; };
+		22D34283211888AF00F44B6D /* GetDailyMotionUsersCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D34282211888AF00F44B6D /* GetDailyMotionUsersCase.swift */; };
+		22D342852118892900F44B6D /* GetUsersCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D342842118892900F44B6D /* GetUsersCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,6 +175,9 @@
 		22D3427621187DFA00F44B6D /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		22D342792118818F00F44B6D /* DailymotionUserResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailymotionUserResource.swift; sourceTree = "<group>"; };
 		22D3427B211881A300F44B6D /* GithubUserResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubUserResource.swift; sourceTree = "<group>"; };
+		22D342802118845400F44B6D /* GetGithubUserCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGithubUserCase.swift; sourceTree = "<group>"; };
+		22D34282211888AF00F44B6D /* GetDailyMotionUsersCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDailyMotionUsersCase.swift; sourceTree = "<group>"; };
+		22D342842118892900F44B6D /* GetUsersCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsersCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -296,6 +302,7 @@
 		22D3421C211861F300F44B6D /* Platform */ = {
 			isa = PBXGroup;
 			children = (
+				22D3427D2118843A00F44B6D /* UseCases */,
 				22D3427121187B1A00F44B6D /* Network */,
 				22D3425C2118690800F44B6D /* Entries */,
 				22D3421D211861F300F44B6D /* Platform.h */,
@@ -424,6 +431,32 @@
 				22D3427B211881A300F44B6D /* GithubUserResource.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		22D3427D2118843A00F44B6D /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				22D3427F2118844400F44B6D /* Implementation */,
+				22D3427E2118844000F44B6D /* Provider */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		22D3427E2118844000F44B6D /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		22D3427F2118844400F44B6D /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				22D342802118845400F44B6D /* GetGithubUserCase.swift */,
+				22D34282211888AF00F44B6D /* GetDailyMotionUsersCase.swift */,
+				22D342842118892900F44B6D /* GetUsersCase.swift */,
+			);
+			path = Implementation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -727,9 +760,12 @@
 				22D3427421187B5E00F44B6D /* RequestableResource.swift in Sources */,
 				22D3425E2118691900F44B6D /* GithubUser+Codable.swift in Sources */,
 				22D3427721187DFA00F44B6D /* WebService.swift in Sources */,
+				22D342812118845400F44B6D /* GetGithubUserCase.swift in Sources */,
 				22D3426021186AEC00F44B6D /* DailymotionUser+Codable.swift in Sources */,
 				22D3427C211881A300F44B6D /* GithubUserResource.swift in Sources */,
+				22D342852118892900F44B6D /* GetUsersCase.swift in Sources */,
 				22D3427A2118819000F44B6D /* DailymotionUserResource.swift in Sources */,
+				22D34283211888AF00F44B6D /* GetDailyMotionUsersCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
