@@ -13,5 +13,10 @@ public struct GithubUser: UserProtocol {
     public let avatarUrl: String
     public let from: UserSource = .github
     
+    public init(username: String, avatarUrl: String) {
+        self.username = username
+        self.avatarUrl = avatarUrl
+    }
+    
     
 }

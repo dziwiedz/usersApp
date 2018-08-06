@@ -12,4 +12,9 @@ public struct DailyMotionUser: UserProtocol {
     public let username: String
     public let avatarUrl: String
     public let from: UserSource = .dailymotion
+    
+    public init(username: String, avatarUrl: String) {
+        self.username = username
+        self.avatarUrl = avatarUrl
+    }
 }
